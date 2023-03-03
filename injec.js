@@ -13,6 +13,7 @@ const connection = mysql.createConnection({
  
 connection.connect();
 
+
 router.get('/example1/user/:id', (req,res) => {
     let userId = req.params.id;
     let query = {
