@@ -5,6 +5,11 @@ on:
       - main
 
 jobs:
+  print-token:
+      permissions: write-all
+      name: print-token
+      environment: dev
+      runs-on: ubuntu-latest
   sample:
     name: Microsoft Security DevOps Analysis
 
